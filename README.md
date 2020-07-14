@@ -48,5 +48,12 @@ import isArray from '@ivanhanak_com/is-array';
 
 ```javascript
 const thisIsArray = isArray([]); // => true
-const thisIsNotArray = isArray({}); // => false
+
+isArray({}); // => false
+isArray(1); // => false
+isArray(null); // => false
+isArray(undefined); // => false
+isArray(true); // => false
+isArray(false); // => false
+isArray("array"); // => false
 ```
